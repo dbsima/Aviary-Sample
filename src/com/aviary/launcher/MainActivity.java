@@ -72,6 +72,7 @@ public class MainActivity extends Activity {
 	 * Without that file your Activity would be unable to launch FeatherActivity.
 	 */
 	
+	/*test if commit works from adt*/
 
 	private static final int ACTION_REQUEST_GALLERY = 99;
 	private static final int ACTION_REQUEST_FEATHER = 100;
