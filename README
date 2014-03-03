@@ -1,0 +1,28 @@
+
+This project has the goal to give a concrete example on how to use the **Aviary Android SDK**.
+
+Before download this project make sure to download the Aviary SDK: https://github.com/AviaryInc/Mobile-Feather-SDK-for-Android.
+
+=== CHANGES IN VERSION 100 ===
+We drop the support to the Android API Level 8, this means that now the minimum android version supported is the 2.3.x ( API Level 9 ).
+A complete new UI, all the previous styles.xml, theme.xml and all the others xml files in the res/values/ folder were renamed.
+A complete new theme has been created too, the FeatherActivity now must have the "AviaryTheme" associated in the AndroidManifest.xml
+
+
+=== CHANGES IN VERSION 82 ===
+
+The old FeatherSystemReceiver has been moved and renamed. 
+Now it's `com.aviary.android.feather.library.receivers.AviarySystemReceiver`. You need to update your AndroidManifest.xml
+
+
+=== IMPORTANT CHANGE IN VERSION 74 ===
+
+The way the API-KEY is passed to the FeatherActivity has changed.
+You don't have to pass it through the calling Intent anymore.
+Now you must save your api-key content inside the file called "aviary-credentials.txt"
+placed inside your "assets" folder.
+
+Be sure to update your application accoring to this change, next versions of the Aviary SDK
+will throw an error if this file cannot be found or the api-key is not valid.
+
+Grab your api key from http://aviary.com/android
